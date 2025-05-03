@@ -1,455 +1,193 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cardápio - Café com Letras</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fffaf2;
-      color: #333;
-      padding: 2rem;
-      max-width: 600px;
-      margin: auto;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .item {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5rem 0;
-      border-bottom: 1px dotted #ccc;
-      font-size: 1.1rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Café com Letras</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Cardápio - Café com Letras</h1>
-  
-    <div class="item">
-        <span>PASTEL DE CARNE COM OVO</span>
-        <span>R$7,00</span>
-    </div>
-    
-    <div class="item">
-        <span>PASTEL DE FRANGO</span>
-        <span>R$7,00</span>
-    </div>
-    
-    <div class="item">
-        <span>PASTEL DE QUEIJO</span>
-        <span>R$7,00</span>
-    </div>
-    
-    <div class="item">
-        <span>EMPANADA DE FRANGO COM REQUEIJÃO</span>
-        <span>R$7,00</span>
-    </div>
-    
-    <div class="item">
-        <span>EMPANADA DE BRÓCOLIS COM REQUEIJÃO</span>
-        <span>R$7,00</span>
-    </div>
-    
-    <div class="item">
-        <span>EMPANADA DE STROGONOFF DE CARNE</span>
-        <span>R$9,00</span>
-    </div>
-    
-    <div class="item">
-        <span>COXINHA GOURMET DE FRANGO COM REQUEIJÃO</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>COXINHA DE COSTELA</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>EMPADA DE FRANGO COM REQUEIJÃO</span>
-        <span>R$8,00</span>
-    </div>
-    
-    <div class="item">
-        <span>EMPADA DE CAMARÃO</span>
-        <span>R$8,00</span>
-    </div>
-    
-    <div class="item">
-        <span>PÃO DE QUEIJO</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>RISÓLES DE FRANGO COM REQUEIJÃO</span>
-        <span>R$7,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ESPETINHO DE FRANGO</span>
-        <span>R$12,00</span>
-    </div>
-    
-    <div class="item">
-        <span>FOLHADO DE FRANGO COM REQUEIJÃO</span>
-        <span>R$8,00</span>
-    </div>
-    
-    <div class="item">
-        <span>FOLHADO DE PRESUNTO E QUEIJO</span>
-        <span>R$8,00</span>
-    </div>
-    
-    <div class="item">
-        <span>CALABRINHO DE CALABRESA</span>
-        <span>R$9,00</span>
-    </div>
-    
-    <div class="item">
-        <span>DOG AMERICANO DE SALSICHA</span>
-        <span>R$9,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ROSQUINHA DE POLVILHO</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>PIZZA (FATIA) DE CALABRESA</span>
-        <span>R$12,00</span>
-    </div>
-    
-    <div class="item">
-        <span>PIZZA (FATIA) DE MILHO COM BACON</span>
-        <span>R$12,00</span>
-    </div>
-    
-    <div class="item">
-        <span>PIZZA (FATIA) DE QUATRO QUEIJOS</span>
-        <span>R$12,00</span>
-    </div>
-    
-    <div class="item">
-        <span>TORRADA SIMPLES</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>TORRADA COM OVO</span>
-        <span>R$12,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SANDUICHE NATURAL DE PRESUNTO E QUEIJO</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SANDUICHE NATURAL DE FRANGO</span>
-        <span>R$12,00</span>
-    </div>
-    
-    <div class="item">
-        <span>CROISSANT DE CHOCOLATE</span>
-        <span>R$8,00</span>
-    </div>
-    
-    <div class="item">
-        <span>RING HOMER (DONUTS) DE CHOCOLATE</span>
-        <span>R$9,00</span>
-    </div>
-    
-    <div class="item">
-        <span>RING HOMER (DONUTS) DE FRUTAS VERMELHAS</span>
-        <span>R$9,00</span>
-    </div>
-    
-    <div class="item">
-        <span>RING HOMER (DONUTS) DE CREME</span>
-        <span>R$9,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SONHO DE DOCE DE LEITE</span>
-        <span>R$9,00</span>
-    </div>
-    
-    <div class="item">
-        <span>BANOFFE (POTE)</span>
-        <span>R$14,00</span>
-    </div>
-    
-    <div class="item">
-        <span>BROWNIE (POTE)</span>
-        <span>R$14,00</span>
-    </div>
-    
-    <div class="item">
-        <span>BOLO DE POTE (CONSULTAR SABORES)</span>
-        <span>R$14,00</span>
-    </div>
-    
-    <div class="item">
-        <span>BOLO FATIA (CONSULTAR SABORES)</span>
-        <span>R$18,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SALADA DE FRUTAS (POTE)</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>TODDYNHO</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO NATURAL DE LARANJA</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO DEL VALLE 250ML DE UVA</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO DEL VALLE 250ML DE LARANJA</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO KAPPO 200ML DE UVA</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO KAPPO 200ML DE LARANJA</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO KAPPO 200ML DE MORANGO</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO KAPPO 200ML DE ABACAXI</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO OM/TEM 200ML DE LARANJA</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO OM/TEM 200ML DE UVA</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO OM/TEM 200ML DE MAÇÃ</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO FRUKITO 200ML DE FRUTAS CÍTRICAS</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO FRUKITO 200ML DE UVA</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO FRUKITO 500ML DE FRUTAS CÍTRICAS</span>
-        <span>R$7,00</span>
-    </div>
-    
-    <div class="item">
-        <span>SUCO FRUKITO 500ML DE UVA</span>
-        <span>R$7,00</span>
-    </div>
-    
-    <div class="item">
-        <span>GATORADE POWER 500ML DE UVA</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>GATORADE POWER 500ML DE BLUE BERRY</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>GATORADE 500ML DE FRUTAS CÍTRICAS</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>GATORADE 500ML DE BLUE BERRY</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>GATORADE 500ML DE LARANJA</span>
-        <span>R$10,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ENERGÉTICO MONSTER </span>
-        <span>R$15,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ENERGÉTICO RED BULL</span>
-        <span>R$15,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ENERGÉTICO PITAYA</span>
-        <span>R$15,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ENERGÉTICO TROPICAL</span>
-        <span>R$15,00</span>
-    </div>
-    
-    <div class="item">
-        <span>H2O DE LIMÃO 500ML</span>
-        <span>R$8,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE LATA SPRIT 220ML</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE LATA FANTA LARANJA 220ML</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE LATA GUARANÁ 220ML</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE LATA UVA 220ML</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE LATA COCA-COLA 220ML</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE FRUKI PET GUARANÁ 200ML</span>
-        <span>R$4,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE FRUKI PET GUARANÁ ZERO 200ML</span>
-        <span>R$4,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE FRUKI PET UVA 200ML</span>
-        <span>R$4,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE FRUKI PET LARANJA 200ML</span>
-        <span>R$4,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE FRUKI PET LIMÃO 200ML</span>
-        <span>R$4,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE GUARANÁ ANTARTICA 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE PEPSI 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE PEPSI BLACK ZERO 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE FRUKI GUARANÁ 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE FRUKI GUARANÁ ZERO 350 ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE COCA-COLA 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>REFRIGERANTE COCA-COLA ZERO 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ÁGUA SABORIZADA COM GÁS - ABACAXI COM HORTELÃ 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ÁGUA SABORIZADA COM GÁS - FRUTAS VERMELHAS 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ÁGUA SABORIZADA COM GÁS - LIMÃO E ALECRIM 350ML</span>
-        <span>R$6,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ÁGUA COM GÁS 350ML</span>
-        <span>R$4,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ÁGUA COM GÁS 500ML</span>
-        <span>R$5,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ÁGUA SEM GÁS 350ML</span>
-        <span>R$4,00</span>
-    </div>
-    
-    <div class="item">
-        <span>ÁGUA COM GÁS 500ML</span>
-        <span>R$5,00</span>
-    </div>
-    
-</body>
-</html>
+<body class="bg-gray-100 font-sans">
+  <!-- Header Section -->
+  <header class="bg-amber-600 text-white text-center py-6">
+    <h1 class="text-4xl font-bold">Café com Letras</h1>
+    <p class="text-lg mt-2">Cardápio Online</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto p-6">
+    <!-- Salgados Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-amber-800 mb-4">Salgados</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Pastel de Carne com Ovo</h3>
+          <p class="text-gray-600">R$ 7,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Pastel de Frango</h3>
+          <p class="text-gray-600">R$ 7,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Pastel de Queijo</h3>
+          <p class="text-gray-600">R$ 7,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Empanada de Frango com Requeijão</h3>
+          <p class="text-gray-600">R$ 7,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Empanada de Brócolis com Requeijão</h3>
+          <p class="text-gray-600">R$ 7,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Empanada de Strogonoff de Carne</h3>
+          <p class="text-gray-600">R$ 9,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Coxinha Gourmet de Frango com Requeijão</h3>
+          <p class="text-gray-600">R$ 10,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Coxinha de Costela</h3>
+          <p class="text-gray-600">R$ 10,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Empada de Frango com Requeijão</h3>
+          <p class="text-gray-600">R$ 8,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Empada de Camarão</h3>
+          <p class="text-gray-600">R$ 8,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Pão de Queijo</h3>
+          <p class="text-gray-600">R$ 5,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Risóles de Frango com Requeijão</h3>
+          <p class="text-gray-600">R$ 7,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Espetinho de Frango</h3>
+          <p class="text-gray-600">R$ 12,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Folhado de Frango com Requeijão</h3>
+          <p class="text-gray-600">R$ 8,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Folhado de Presunto e Queijo</h3>
+          <p class="text-gray-600">R$ 8,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Calabrinho de Calabresa</h3>
+          <p class="text-gray-600">R$ 9,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Dog Americano de Salsicha</h3>
+          <p class="text-gray-600">R$ 9,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Rosquinha de Polvilho</h3>
+          <p class="text-gray-600">R$ 5,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Pizza (Fatia) de Calabresa</h3>
+          <p class="text-gray-600">R$ 12,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Pizza (Fatia) de Milho com Bacon</h3>
+          <p class="text-gray-600">R$ 12,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Pizza (Fatia) de Quatro Queijos</h3>
+          <p class="text-gray-600">R$ 12,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Torrada Simples</h3>
+          <p class="text-gray-600">R$ 10,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Torrada com Ovo</h3>
+          <p class="text-gray-600">R$ 12,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Sanduíche Natural de Presunto e Queijo</h3>
+          <p class="text-gray-600">R$ 10,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Sanduíche Natural de Frango</h3>
+          <p class="text-gray-600">R$ 12,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Croissant de Chocolate</h3>
+          <p class="text-gray-600">R$ 8,00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doces Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-amber-800 mb-4">Doces</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Ring Homer (Donuts) de Chocolate</h3>
+          <p class="text-gray-600">R$ 9,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Ring Homer (Donuts) de Frutas Vermelhas</h3>
+          <p class="text-gray-600">R$ 9,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Ring Homer (Donuts) de Creme</h3>
+          <p class="text-gray-600">R$ 9,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Sonho de Doce de Leite</h3>
+          <p class="text-gray-600">R$ 9,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Banoffe (Pote)</h3>
+          <p class="text-gray-600">R$ 14,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Brownie (Pote)</h3>
+          <p class="text-gray-600">R$ 14,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Bolo de Pote (Consultar Sabores)</h3>
+          <p class="text-gray-600">R$ 14,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Bolo Fatia (Consultar Sabores)</h3>
+          <p class="text-gray-600">R$ 18,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Salada de Frutas (Pote)</h3>
+          <p class="text-gray-600">R$ 10,00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suco Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-amber-800 mb-4">Sucos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Toddynho</h3>
+          <p class="text-gray-600">R$ 5,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Suco Natural de Laranja</h3>
+          <p class="text-gray-600">R$ 10,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Suco Del Valle 250ml de Uva</h3>
+          <p class="text-gray-600">R$ 6,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Suco Del Valle 250ml de Laranja</h3>
+          <p class="text-gray-600">R$ 6,00</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-lg font-medium">Suco Kappo 200ml de Uva</h3
